@@ -13,7 +13,7 @@
     <name>Random Property Maven Plugin</name>
     <description>Create a random string into a property.</description>
 
-    <url>https://github.com/wolfetti/zip-maven-plugin</url>
+    <url>https://github.com/wolfetti/random-property-maven-plugin</url>
     
     <developers>
         <developer>
@@ -37,6 +37,23 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+ 
+    <scm>
+        <url>https://github.com/wolfetti/random-property-maven-plugin</url>
+        <connection>scm:git:git://github.com/wolfetti/random-property-maven-plugin.git</connection>
+        <developerConnection>scm:git:ssh://github.com:wolfetti/random-property-maven-plugin.git</developerConnection>
+    </scm>
+    
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <prerequisites>
         <maven>${maven.version}</maven>
